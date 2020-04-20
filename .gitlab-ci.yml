@@ -1,0 +1,13 @@
+image: "ruby:2.6"
+
+before_script:
+  - apt-get update
+
+rspec:
+  script:
+    - which ruby
+
+rubocop:
+  script:
+    - echo bundle exec rubocop
+
